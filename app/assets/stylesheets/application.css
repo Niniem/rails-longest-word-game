@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+
+li {
+  background-color: #f7ddde;
+  letter-spacing: 30px;
+  display: inline;
+}
+
+ul {
+  list-style: none;
+}
+
+.form-group {
+  font-size: 20px;
+}
+
+.btn {
+font-size: 20px;
+
+}
+
+#insertWord {
+  font-size: 30px;
+}

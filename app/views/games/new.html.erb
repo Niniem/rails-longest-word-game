@@ -1,0 +1,20 @@
+<h1>Scrabble !</h1>
+<p>Tente ta chance</p>
+
+  <div class = letters>
+    <ul>
+      <li>
+        <% @letters.each do |letter| %>
+        <%=letter.capitalize %>
+        <% end %>
+      </li>
+    </ul>
+    </div>
+
+<p>What is the longuest word you can find ?</p>
+    <form action="/score" class="form-inline" method="post">
+       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+       <label class="sr-only" for="inlineFormInputName2">Name</label>
+       <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2">
+       <button type="submit" class="btn btn-secondary mb-2">Play!</button>
+  </form>
